@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <!--  -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <style>
+    .navbar-brand {
+      color: white;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    .now-playing {
+      text-align: center;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      background-color: rgb(36, 33, 48);
+    }
+    .navbar-upper{
+      background-color: rgb(36, 33, 48);
+    }
+
+    .nav-link {
+      color: white;
+      font-weight: 300;
+    }
+
+    .nav-link:hover {
+      border: 1px solid white;
+      border-radius: 20px;
+      color: white;
+      font-size: 10px;
+    }
+    
+    .btn-one {
+      background-color: rgb(36, 33, 48);
+      font-weight: 600;
+      border: 1px solid snow
+    }
+
+    .btn-one:hover {
+      background-color: rgb(255, 255, 255);
+      font-weight: 600;
+      border: none;
+      color: black;
+      border: 1px solid black;
+    }
+
+    .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    }
+    
+  .icon-color {
+    background-color: rgb(36, 33, 48);
+  }
+
+  .hamburger-icon {
+    color: white;
+  } 
+
+  .featured {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
+  .page-number {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;  
+  }
+
+  a:hover {
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+    
+  </style>
+</head>
+<body>
+   <!-- NEW CONTENT NAVBAR -->
+   <nav class="navbar navbar-upper navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-boombox-fill"></i> Movee </a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=" navbar-toggler-icon hamburger-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-upper-text me-auto mb-2 mb-lg-0 mx-2">
+          <li class="nav-item">
+            <a class="nav-link a mx-2" aria-current="page" href="./index.html"><i class="bi bi-house"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a mx-2" href="#"> <i class="bi bi-file-earmark-person"></i> About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle a" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-tv"></i> Movie  Category 
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./action.html">Action</a></li>
+              <li><a class="dropdown-item" href="./cartoon.html">Cartoon</a></li>
+              <li><a class="dropdown-item" href="./romance.html">romance</a></li>
+              <li><a class="dropdown-item" href="./comedy.html">comedy</a></li>
+              <li><a class="dropdown-item" href="./romance.html">Romance</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Request Movie</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Movie" aria-label="Search">
+          <button class="btn btn-outline-lgh" type="submit"><i class="bi bi-search" style="color: rgb(255, 255, 255);"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <br>
+    <ol class="breadcrumb ms-5">
+      <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Romance</li>
+    </ol>
+  </nav>
+
+  <!-- CARD  -->
+  <div class="container mt-2">
+    <hr>
+    <h2 class="featured"><i class="bi bi-align-start"></i> Romance Movies</h2>
+    <br>
+    <div class="row">
+      <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/1.jpg" class="card-img-top" alt="Galaksi (2019)">
+          <div class="card-body">
+            <p class="card-text fw-medium fw-medium"> Perfect Strangers (2019)</p>
+            <p> A film by Bryan domani.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+         <!-- SPACE -->
+         <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/2.jpg" class="card-img-top" alt="V.I.M A.O.P.C (2022)">
+          <div class="card-body">
+            <p class="card-text fw-medium">Cinta Pertama & Ketiga (2022)</p>
+            <p> A film by Palapa majid.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+         <!-- SPACE -->
+         <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/3.jpg" class="card-img-top" alt="Adagium (2023)">
+          <div class="card-body">
+            <p class="card-text fw-medium">Perjalanan Pertama (2023)</p>
+            <p> A film by Neil Tran.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+         <!-- SPACE -->
+         <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/4.jpg" class="card-img-top" alt="Almond (2020)">
+          <div class="card-body">
+            <p class="card-text fw-medium">Autobiography (2020) </p>
+            <p> A film by Martino lio.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+         <!-- SPACE -->
+         <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/5.jpg" class="card-img-top" alt="Buya Hamka (2023)">
+          <div class="card-body">
+            <p class="card-text fw-medium">A World without (2022)</p>
+            <p> A film by Martino lio.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+         <!-- SPACE -->
+         <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/6.jpg" class="card-img-top" alt="Kamu tidak sendiri (2023)">
+          <div class="card-body">
+            <p class="card-text fw-medium">First Love (2023)</p>
+            <p> A film by Manoj punjabi.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+        <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/7.jpg" height="330px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-medium">Story of Diana (2018)</p>
+            <p> A film by Nani Indriari.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+        <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/8.jpg"  height="330px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-medium">Cinta Subuh (2017)</p>
+            <p>A film by Adam Nunuki.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+        <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/9.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-medium">Until Tomorrow (2007) </p>
+            <p> A film by Dedy Mercy.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+        <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/10.jpg"  class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-medium">Ketika Berhenti Disini (2022)</p>
+            <p>A film by Neil Tran.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+        <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/11.jpg" height="330px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-medium">Like & Share (2023)</p>
+            <p> A film by Neil Tran.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+        <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+          <img src="./Asset movie/romance/12.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-medium">JYJJLP (2002) </p>
+            <p>A film by Samuela.</p>
+            <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+          </div>
+        </div>
+        <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+            <img src="./Asset movie/romance/13.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-medium">Akhirat Story (2021)</p>
+              <p> A film by Lisa Andira.</p>
+              <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+            </div>
+          </div>
+          <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+            <img src="./Asset movie/romance/14.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-medium">Romantik Problematik (2020) </p>
+              <p> A film by Neil Tran.</p>
+              <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+            </div>
+          </div>
+          <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+            <img src="./Asset movie/romance/15.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-medium">Hati Suhita (2023)</p>
+              <p>A film by Neil Tran.</p>
+              <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+            </div>
+          </div>
+          <!-- SPACE -->
+        <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+            <img src="./Asset movie/romance/16.jpg" height="330px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-medium">Between Us (2017)</p>
+              <p> A film by Neil Tran.</p>
+              <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+            </div>
+          </div>
+             <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+            <img src="./Asset movie/romance/17.jpg" height="330px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-medium">Sinar Untuk Genta (2016)</p>
+              <p> A film by Neil Tran.</p>
+              <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+            </div>
+          </div>
+             <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+            <img src="./Asset movie/romance/18.jpg" height="330px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-medium">The Wedding (2007)</p>
+              <p> A film by Neil Tran.</p>
+              <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+            </div>
+          </div>
+             <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/19.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Dear Nathan (2013)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+            </div>
+          </div>   
+          <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/20.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text fw-medium">Gita Cinta SMA (2011)</p>
+                    <p> A film by Neil Tran.</p>
+                    <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+               <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/21.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Kukira Kau Rumah (2017)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+              <!-- SPACE -->
+              <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/22.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Bismillah Kunikahi (2023)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/23.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Keluarga Cemara 2 (2018)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/24.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">My Sassy Girl (2017)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+             <!-- SPACE -->
+             <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/25.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Nokta Merah Kawin (2022)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/26.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Indah Hati (2017)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/27.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Romantik (2011)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/28.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Gendut Siapa Takut?! (2010)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/29.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Madu Murni (2021)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/30.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Roh Mati Paksa (2022)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/31.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Argantara (2007)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            <!-- SPACE -->
+            <div class="card" style="width: 18rem; margin: 10px;border-radius: 20px; background-color: rgb(58, 58, 58); color: white;">
+                <img src="./Asset movie/romance/32.jpg" height="330px" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-medium">Nagih Janji Cinta (2022)</p>
+                <p> A film by Neil Tran.</p>
+                <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=cNhwtxKgCmE" style="text-decoration: none; color: white;">Watch Now</a></button>
+                </div>
+            </div>
+            
+       
+<!-- FOOOTER -->
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <i class="bi bi-boombox-fill"></i>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Ega, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/eghasbp"><i class="bi bi-facebook"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/eghasbp"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.twitter.com/eghasbp"><i class="bi bi-twitter"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>
